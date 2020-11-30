@@ -1,6 +1,6 @@
-docker build -t sergiohpreis/multi-client:latest -t sergiohpreis/multi-client:$SHA -f .client/Dockerfile ./client
-docker build -t sergiohpreis/multi-server:latest -t sergiohpreis/multi-server:$SHA -f .server/Dockerfile ./server
-docker build -t sergiohpreis/multi-worker:latest -t sergiohpreis/multi-worker:$SHA -f .worker/Dockerfile ./worker
+docker build -t sergiohpreis/multi-client:latest -t sergiohpreis/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t sergiohpreis/multi-server:latest -t sergiohpreis/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t sergiohpreis/multi-worker:latest -t sergiohpreis/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push sergiohpreis/multi-client:latest
 docker push sergiohpreis/multi-client:$SHA
